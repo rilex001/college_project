@@ -1,74 +1,78 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nikola Ristic 326</title>
-    <link rel="stylesheet" href="stil.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <div class="header"> </div>
+    
+    <div class="header"></div>
 
     <div class="site-nav">
         <a class="one">Pocetna</a>
-        <a class="two">Smestaj</a>
+        <a class="two">Smestaj</a> 
         <a class="three">Rezervisi</a>
-        <a class="four">Kontakt</a>
+        <a class="four">Kontakt</a>   
     </div>
 
     <div class="container">
-        <div class="gdoba">
-            <img  id="promena">
-        </div>
-
-        <div class="inp">
-            <h3>Broj osoba i dana:</h3>
+        <img  alt="godisnje doba" class="slika">
+        <div class="input">
+            <h3>Broj osoba i dana</h3>
             <form id="myForm">
                 <input type="number" id="odrasli" placeholder="30e dnevno po osobi">
-                <label for="odrasli">Broj Odraslih</label>
+                <label for="odrasli">Broj odraslih</label>
             </br>
                 <input type="number" id="deca" placeholder="15e dnevno po osobi">
                 <label for="deca">Broj dece</label>
             </br>
                 <input type="number" id="dani" placeholder="Broj dana">
                 <label for="dani">Broj dana</label>
-            <h3>Tip smestaja:</h3>  
-                <input type="checkbox" id="hotel" value="hotel" >
-                <label for="hotel">Hotelski smestaj</label> 
-                    </br> 
-                <input type="checkbox" id="privatno" value="privatno">
-                <label for="privatno">Privatni smestaj</label>
-            <h3>Ostale pogodnosti</h3>
-                <input type="checkbox" id="wifi" value="wifi" name="WiFi">
-                <label for="wifi">Wi-Fi</label> 
-                    </br> 
-                <input type="checkbox" id="bazen" value="bazen">
-                <label for="bazem">Bazen</label> 
-                    </br> 
-                <input type="checkbox" id="parking" value="parking">
-                <label for="hotel">Sopstveni parking</label>  
-                    </br>
-                <input type="checkbox" id="klima" value="klima">
-                <label for="klima">Klima uredjaj</label> 
-                    </br>
-                <input type="checkbox" id="kuhinja" value="kuhinja">
-                <label for="kuhinja">Kuhinja</label>  
-                    </br>
-                <input type="submit"> Izracunaj </button>
+            <h3>Tip smestaja</h3>
+            <input type="radio" name="smestaj" id="hotel">
+            <label for="hotel">Hotelski smestaj</label>
+            </br>
+            <input type="radio" name="smestaj" id="privatno">
+            <label for="privatno">Privatni smestaj</label>
+            <h3>Ostale pogodnosti:</h3>
+            <input type="checkbox" name="wifi" id="wifi">
+            <label for="wifi">Wifi</label>
+        </br>
+
+            <input type="checkbox" name="bazen" id="bazen">
+            <label for="bazen">Bazen</label>
+        </br>
+
+            <input type="checkbox" name="parking" id="parking">
+            <label for="parking">Sopstveni parking</label>
+        </br>
+
+            <input type="checkbox" name="klima" id="klima">
+            <label for="klima">Klima uredjaj</label>
+        </br>
+
+            <input type="checkbox" name="kuhinja" id="kuhinja">
+            <label for="kuhinja">Kuhinja</label>
+        </br>
+
+            <input type="submit">
+            <input type="reset">
             </form>
-            <button class="reset">Resetuj</button>
-
         </div>
+        <div class="cenaSmestaja">
+            <h3>Cena smestaja</h3>
+            <ul class="lista">
 
-        <div class="cena">
-            <h3>Cena smestaja: </h3>
-            <ul class="list">
             </ul>
         </div>
     </div>
 
+    <footer>Copyright Nikola Ristic</footer>
+
+    <script src="script.js"></script>
+
 </body>
-
-<script src="script.js"></script>
-
-
 </html>
